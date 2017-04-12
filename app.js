@@ -14,8 +14,8 @@ program
   .option('-a, --attributes', 'Will return all attributes & uniques values for all paths')
   .option('-i, --input <path>', 'An xml input file')
   .option('-f, --folder <path>', 'A folder containing xml files')
-  .option('-e, --extension <ext1 ext2 ext3 ...>', 'A list of entension for folder files to be read, .xml is default')
-  .option('-o, --output <path>', 'Generate files to specific path, default is console')
+  .option('-e, --extension <ext1 ext2 ext3 ...>', 'A list of entensions for folder files to be read, .xml is default')
+  .option('-o, --output <path>', 'Generate files to specific path, default is console', 'console')
   .option('-t, --type <tree/xpaths/both>', 'Type of format output, can be tree/xpaths or both for outputdir, tree/xpaths for console')
   .parse(process.argv);
 

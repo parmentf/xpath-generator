@@ -37,7 +37,7 @@ xpath-generator --help
   -a, --attributes               Will return all attributes & uniques values for all paths
   -i, --input <path>             An xml input file
   -f, --folder <path>            A folder containing xml files
-  -o, --output <path>            Generate files to specific path, default output is terminal
+  -o, --output <path>            Generate files to specific path, default output is console 
   -t, --type <tree/xpaths/both>  Type of format output, can be 'tree' 'xpaths' or 'both' for outputdir, 'tree' 'xpaths' for console
 
 
