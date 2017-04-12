@@ -11,7 +11,7 @@ Tree :
 List:
 ![Xpath-List](https://raw.githubusercontent.com/inist-CNRS/xpath-generator/master/xpath-xpaths.png)
 
-##CLI :
+## CLI :
 ```sh
 npm i -g xpath-generator
 ```
@@ -23,8 +23,8 @@ xpath-generator -f /folder/ -o /output
 
 ### Folder information
 
-If you want to lauch xpath-generator on a folder, pelas emake sur all your XML are at the top level of our folder, xpath-genrator will not go through subfolder to find them.
-If your main folder contains nasted subfolder wich contains your xml (ex: /main/sub:Sub2.ex.xml) please consider using [Sisyphe](https://github.com/istex/sisyphe)
+If you want to launch xpath-generator on a folder, please make sure all your XMLs are at the top level of your folder, `xpath-generator` will not go through subfolders to find them.
+If your main folder contains nested subfolders wich contain your xml (ex: /main/sub:Sub2.ex.xml) please consider using [Sisyphe](https://github.com/istex/sisyphe)
 
 ### Help
 ```sh
@@ -41,7 +41,7 @@ xpath-generator --help
   -t, --type <tree/xpaths/both>  Type of format output, can be 'tree' 'xpaths' or 'both' for outputdir, 'tree' 'xpaths' for console
 
 
-##Use it as service :
+## Use it as service :
 ```sh
 npm i -save xpath-generator
 ```
@@ -50,7 +50,7 @@ Load it :
 
 ```js
 const FromXML = require('xpath-generator').FromXML,
-      FromFolder = require('xpath-generator').FromFolder;     
+      FromFolder = require('xpath-generator').FromFolder;
 ```
 
 Use it :
@@ -65,7 +65,7 @@ let xmls = new FromFolder().generateAll(program.folder).then(result=> {
     console.log(`${path} ${result[path].count}`);
   }
 });
-```   
+```
 
 Result will return an array of object like: 
 
