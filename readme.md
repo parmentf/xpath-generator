@@ -5,10 +5,10 @@ Xpath-Generator
 
 Node script (API & CLI) that can generate a list of xpaths for XML files, group & count them, list attributes & values.
 
-Tree :
+##### Tree view :
 ![Xpath-Tree](https://raw.githubusercontent.com/inist-CNRS/xpath-generator/master/xpath-tree-console.png)
 
-List:
+##### List view:
 ![Xpath-List](https://raw.githubusercontent.com/inist-CNRS/xpath-generator/master/xpath-xpaths.png)
 
 ## CLI :
@@ -24,6 +24,7 @@ xpath-generator -f /folder/ -o /output
 ### Folder information
 
 If you want to launch xpath-generator on a folder, please make sure all your XMLs are at the top level of your folder, `xpath-generator` will not go through subfolders to find them.
+
 If your main folder contains nested subfolders wich contain your xml (ex: /main/sub:Sub2.ex.xml) please consider using [Sisyphe](https://github.com/istex/sisyphe)
 
 ### Help
@@ -32,14 +33,23 @@ xpath-generator --help
 ```
 
 ### Options
-  -h, --help                     output usage information
-  -V, --version                  output the version number
-  -a, --attributes               Will return all attributes & uniques values for all paths
-  -i, --input <path>             An xml input file
-  -f, --folder <path>            A folder containing xml files
-  -o, --output <path>            Generate files to specific path, default output is console 
-  -t, --type <tree/xpaths/both>  Type of format output, can be 'tree' 'xpaths' or 'both' for outputdir, 'tree' 'xpaths' for console
 
+  -h, --help                     //output usage information
+  
+  -V, --version                  //output the version number
+  
+  -a, --attributes               //Will return all attributes & uniques values for all paths
+  
+  -i, --input <"path">             //An xml input file
+  
+  -f, --folder <"path">            //A folder containing xml files
+  
+  -o, --output <path/"console">            //Generate files to specific folder, default output is terminal
+  
+  -t, --type <"tree"/"xpaths"/"both">  Type of format output, can be 'tree' 'xpaths' or 'both' for outputdir, 'tree' 'xpaths' for console
+
+
+## Use xpath-generator as API :
 
 ## Use it as service :
 ```sh
