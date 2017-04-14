@@ -51,7 +51,6 @@ xpath-generator --help
 
 ## Use xpath-generator as API :
 
-## Use it as service :
 ```sh
 npm i -save xpath-generator
 ```
